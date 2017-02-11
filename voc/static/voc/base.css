@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mainnav {
+  list-style-type: none;
+}
+
+.mainnav li {
+  float: left;
+}
+
+.mainnav li:nth-child(2) {
+  margin-left: 20px;
+}
+
+.mainnav li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.mainnavContainer {
+  float: right;
+  margin-right: 20px;
+}
+
+.header {
+  display: block;
+  height: 5vh;
+}
+
+.logo {
+  float: left;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 15px;
+}

@@ -1,4 +1,12 @@
 {% load static %}
-<link rel="stylesheet" href="{% static "voc/base.css" %}">
-
-<a href="{% url "login" %}">Login</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static "voc/base.css" %}">
+    <meta charset="utf-8">
+    <title>Jargon</title>
+  </head>
+  <body>
+    {% include "voc/header.html" %}
+  </body>
+</html>
