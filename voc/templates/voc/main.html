@@ -1,1 +1,57 @@
-MAIN
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static "voc/base.css" %}">
+    <link rel="stylesheet" href="{% static "voc/main.css" %}">
+    <link rel="stylesheet" href="{% static "voc/popup.css" %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title>Jargon</title>
+    <script src="{% static "voc/popup.js" %}"></script>
+  </head>
+  <body id="index">
+    {% include "voc/header.html" %}
+    {% include "voc/popupLang.html" %}
+    <div class="bodyWrap"></div>
+    <div class="container" id="container1">
+      <div class="containerSection1">
+        <div class="circle">
+          <i class="fa fa-language" aria-hidden="true"></i>
+        </div>
+        <h2>New Language</h2>
+      </div>
+      <div class="seperator"></div>
+      <div class="containerSection2">
+        <h3>Add a new Language to your Account</h3>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="containerSection1">
+        <div class="circle">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </div>
+        <h2>Add vocabulary</h2>
+      </div>
+      <div class="seperator"></div>
+      <div class="containerSection2">
+        <h3>Add new words to one of your languages</h3>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="containerSection1">
+        <div class="circle">
+          <i class="fa fa-rocket" aria-hidden="true"></i>
+        </div>
+        <h2>Train</h2>
+      </div>
+      <div class="seperator"></div>
+      <div class="containerSection2">
+        <h3>Train one of your languages</h3>
+      </div>
+    </div>
+  </body>
+</html>

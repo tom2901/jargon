@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Share:400,700');
 body {
   margin: 0;
   padding: 0;
@@ -7,22 +9,37 @@ body {
   list-style-type: none;
 }
 
-.mainnav li {
+.mainnav li:not(.logo) {
   float: left;
+  color: #FFF;
 }
 
 .mainnav li:nth-child(2) {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .mainnav li a {
-  color: #000;
+  color: #FFF;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 3vh;
+  font-family: 'Shadows Into Light', cursive;
+  transition: all .2s ease;
+}
+
+.mainnav .hiddenpageLink {
+  font-family: 'Share', cursive;
+  color: #FFF;
+  font-weight: 400;
+}
+
+.mainnav li a:hover {
+  color: #0087c3;
 }
 
 .mainnavContainer {
   float: right;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .header {
@@ -31,8 +48,11 @@ body {
 }
 
 .logo {
+  color: #FFF;
   float: left;
-  font-weight: bold;
+  font-weight: bolder;
   font-family: monospace;
-  font-size: 15px;
+  font-size: 4vh;
+  font-variant: small-caps;
+  margin-left: -15px;
 }

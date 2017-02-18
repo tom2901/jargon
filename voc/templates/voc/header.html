@@ -2,8 +2,13 @@
   <ul class="mainnav">
       <li class="logo">Jargon</li>
     <div class="mainnavContainer">
-      <li><a href="{% url "login" %}">Login</a></li>
-      <li><a href="{% url "register" %}">Register</a></li>
+      {% if SECRETPAGE %}
+        <li><a href="#" class="hiddenpageLink">Tom29102</a></li>
+      {% else %}
+        <li><a href="{% url "login" %}">Login</a></li>
+        <li><a href="{% url "register" %}">Register</a></li>
+      {% endif %}
+
     </div>
   </ul>
 </div>

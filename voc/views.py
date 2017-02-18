@@ -14,8 +14,8 @@ def register(request):
     return render(request, 'voc/register.html')
 
 def main(request):
-    context = {}
-    return render(request, 'voc/main.html')
+    context = {'SECRETPAGE': True}
+    return render(request, 'voc/main.html', context)
 
 def train(request):
     context = {}
